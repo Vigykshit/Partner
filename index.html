@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Image with CSS</title>
+    <style>
+        .iframe-style {
+            width: 100%; /* Adjust width as needed */
+            height: 300px; /* Adjust height as needed */
+            position: relative; /* Ensure relative positioning for absolutely positioned content */
+            overflow: hidden; /* Hide overflowing content */
+            border: none; /* Remove any border */
+        }
+        .iframe-style img {
+            width: 100%; /* Make image responsive */
+            height: auto; /* Preserve aspect ratio */
+            display: block; /* Remove default inline behavior */
+            position: absolute; /* Position image absolutely */
+            top: 0; /* Position image at the top */
+            left: 0; /* Position image at the left */
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-style">
+        <img src="https://i.ibb.co/bb8ybZg/zoho.png" alt="Your Image">
+    </div>
+</body>
+</html>
